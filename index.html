@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    .attribution {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .background {
+      background-color: hsl(185, 75%, 39%);
+      background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+      background-size: 50vw, 50vw;
+  
+    }
+
+    .card {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 30px;
+      box-shadow: 0 10px 50px hsla(0, 0%, 0%, 0.33);
+      margin: 10rem auto;
+      width: 28rem;
+      height: 30rem;
+    }
+
+    .card__header img {
+      height: 10rem;
+      border-radius: 20px;
+      overflow-y: hidden;
+      width: 100%;  
+    }
+
+    .card__profile {
+      border:hsl(0, 0%, 100%) solid 5px;
+      border-radius: 50%;
+      height: 10rem;
+      margin: -8rem 5rem -5rem 8rem;
+      width: 10rem;
+    }
+
+    .card__body {
+      padding: 5rem 5rem 0 5rem;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card__body h1 {
+      color: hsl(229, 23%, 23%);
+      font-size: 2rem;
+      margin-bottom: -1.2rem;
+    }
+
+    .card__body  span {
+      margin-left: 0.675rem;
+      color: hsl(0, 0%, 59%);
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    .card__body p {
+      color: hsl(0, 0%, 59%);
+      font-size: 1.5rem;
+      font-weight: 400;
+      padding-bottom: 1.5rem;
+    }
+
+    hr {
+      border: 1px solid hsl(0, 0%, 80%);
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: auto;
+    }
+
+    .card__footer {
+      height: 5rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 10rem;
+      margin: -1rem auto;
+    }
+
+    .card__footer h1 {
+      color: hsl(229, 23%, 23%);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0.2rem 2;
+    }
+
+    .card__footer p {
+      color: hsl(0, 0%, 59%);
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 0.5rem 0;
+    }
+
+    .card__footer * {
+      line-height: 2rem;
+    }
+  </style>
+</head>
+
+<body class="background">
+  <div class="card">
+    <div class="card__header">
+      <img src="images/bg-pattern-card.svg" alt="Background pattern" />
+    </div>
+    <img class="card__profile" src="images/image-victor.jpg" alt="Profile picture" />
+    <div class="card__body">
+      <h1>Victor Crest<span>26</span></h1>
+      <p>London</p>
+    </div>
+    <div class="card__footer">
+      <hr>
+      <h1>80K</h1>
+      <p>Followers</p>
+      <h1>803K</h1>
+      <p>Likes</p>
+      <h1>1.4K</h1>
+      <p>Photos</p>
+    </div>
+  </div>
+</body>
+<footer class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="#">Richard Febres</a>.
+</footer>
+</html>
